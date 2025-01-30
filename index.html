@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -26,16 +26,66 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'clifford': '#da373d',
+                        'nature-secondery': "#EFEBE3",
+                        'nature-green': "#179800",
+                        'nature-text': "#111111",
                     }
                 }
             }
         }
     </script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/cadc7837c8.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="sora">
+    <header class="text-nature-text bg-gradient-to-b from-white to-[#efeBE3] min-h-screen">
+        <nav class="container mx-auto">
+            <div class="navbar ">
+                <div class="navbar-start">
+                    <a class="btn btn-ghost text-xl"><img src="./c2-assets/logo-header.png" alt=""></a>
+                </div>
+                <div class="navbar-center hidden  md:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="lg:text-xl" ><a>Product</a></li>
+                        <li class="lg:text-xl" ><a>Services</a></li>
+                        <li class="lg:text-xl" ><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end md:flex gap-2">
+                    <a class="hidden  md:flex"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a>
+                    <a class="hidden  md:flex"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+                    <a class="btn hidden border-2 border-nature-green bg-white  hover:bg-nature-green text-black hover:text-white  lg:text-xl md:flex">Login</a>
+                    <a class="btn hidden btn-success bg-nature-green  md:flex text-white lg:text-xl">Register</a>
+                    <div tabindex="0" role="button" class="btn btn-ghost md:hidden lg:hidden">
+                        <i class="fa-solid fa-bars fa-lg"></i>
+                    </div>
+                    <!-- <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost md:hidden lg:hidden">
+                            <i class="fa-solid fa-bars fa-lg"></i>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+                            <li><a>Product</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Contact us</a></li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </nav>
 
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
 
 </body>
 
