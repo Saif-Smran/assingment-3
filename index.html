@@ -57,21 +57,10 @@
             animation: moveCircle 3s infinite linear;
         }
 
-        /* Make the circle move around the word "Freshness" responsively */
-        @media (max-width: 640px) {
-            .circle-animation::before {
-                width: 15px;
-                height: 15px;
-                animation-duration: 2s; /* Faster animation on smaller screens */
-            }
-        }
-
-        @media (min-width: 641px) and (max-width: 1024px) {
-            .circle-animation::before {
-                width: 18px;
-                height: 18px;
-                animation-duration: 2.5s;
-            }
+        .bimg{
+            background-image: url("./c2-assets/vegetable-offer.png");
+            background-repeat: no-repeat;
+           background-position: bottom right;
         }
     </style>
     <!-- DaisyUI + TailwindCSS -->
@@ -203,16 +192,12 @@
                 <h1 class="font-semibold text-2xl md:text-4xl text-nature-green ">Popular Products</h1>
                 <div class="mt-8 md:pt-12 md:flex space-x-1 gap-5">
                     <div
-                        class="card flex flex-col-reverse bg-[linear-gradient(136.38deg,#53DB3A_25.666%,#FFFFFF_108.596%)] md:pt-6 max-w-[400px]">
-                        <figure class="relative z-10">
-                            <img src="./c2-assets/vegetable-offer.png" alt="Vagitables"
-                                class="w-2/3 relative left-12 md:left-14 z-20" />
-                        </figure>
-                        <div class="card-body md:space-y-4-2">
-                            <h2 class="card-title text-white md:text-4xl">30% off!</h2>
-                            <p>Discover a world of treats, toys, and essentials handpicked for </p>
-                            <div class="card-actions justify-start">
-                                <button class="btn btn-ghost bg-white hover:text-white md:text-xl">Buy Now</button>
+                        class="rounded-lg bg-[linear-gradient(136.38deg,#53DB3A_25.666%,#FFFFFF_108.596%)] md:pt-6 max-w-[400px]  ">
+                        <div class="bimg h-[400px]">
+                            <div class="p-6 md:space-y-4-2 ">
+                                <h2 class=" font-bold text-2xl text-white md:text-4xl">30% off!</h2>
+                                <p class="mt-4">Discover a world of treats, toys, and essentials handpicked for </p>
+                                <button class="mt-3 btn btn-ghost bg-white hover:text-white md:text-xl w-2/4">Buy Now</button>                                
                             </div>
                         </div>
                     </div>
